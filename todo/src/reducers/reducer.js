@@ -4,8 +4,7 @@ export const initialState = {
     item: 'Learn about reducers',
     completed: false,
     id: 3892987589
-   }] 
-   
+   }]  
 };
 
 export const reducer = (state, action) => {
@@ -26,7 +25,6 @@ export const reducer = (state, action) => {
       return{
         todos: state.todos.map((task, idx) => 
         idx === action.idx ? {...task, completed: !task.completed} : task)
-
       }
          default:
            return state;

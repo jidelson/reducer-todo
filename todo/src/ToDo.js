@@ -10,12 +10,11 @@ function ToDoList(props) {
             onClick={() => dispatch({type: "TOGGLE_TODO", idx})}
             style={{
             textDecoration: task.completed ? 'line-through' : ""
-        }}
+            }}
         >
         {task.item}
         </div>
     ))}
-  
    </div>
     )
 }

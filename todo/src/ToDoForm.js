@@ -2,7 +2,7 @@ import React, { useState, useReducer } from 'react';
 import { initialState, reducer } from '../src/reducers/reducer';
 
 function ToDoForm (props) {
-   const {dispatch} = props
+    const {dispatch} = props
     const [text, setText] = useState("")
 
     const handleChanges = e => {
@@ -30,13 +30,12 @@ function ToDoForm (props) {
             <form onSubmit={handleSubmit}>
                 <label> Task:
                 <input 
-                    type= 'text'
-                    name = 'task'
-                    value = {text}
-                    onChange = {handleChanges}
+                    type='text'
+                    name='task'
+                    value={text}
+                    onChange={handleChanges}
                 />
                 </label>
-
                 <button>
                     Submit
                 </button>
@@ -45,7 +44,6 @@ function ToDoForm (props) {
                     Clear
                 </button>
             </form>
-                
         </div>
     )
 }
